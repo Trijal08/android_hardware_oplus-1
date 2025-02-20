@@ -50,6 +50,14 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.camera.aon</name>
+        <version>1.0</version>
+        <interface>
+            <name>IAONService</name>
+            <instance>oplusaoncameraservice</instance>
+        </interface>
+    </hal>
     <hal format="aidl" optional="true">
         <name>vendor.oplus.hardware.camera.aon</name>
         <version>1</version>
@@ -370,8 +378,16 @@
         </interface>
     </hal>
     <hal format="aidl" optional="true">
-        <name>vendor.pixelworks.hardware.display</name>
+        <name>vendor.oplus.hardware.virtual_device.camera.manager</name>
         <version>1</version>
+        <interface>
+            <name>IVirtualCameraManager</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.pixelworks.hardware.display</name>
+        <version>1-2</version>
         <interface>
             <name>IIris</name>
             <instance>default</instance>
